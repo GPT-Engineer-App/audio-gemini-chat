@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { Mic, StopCircle, Volume2 } from 'lucide-react';
 
-const GEMINI_API_KEY = 'YOUR_GEMINI_API_KEY'; // Replace with your actual API key
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 
 const Index = () => {
